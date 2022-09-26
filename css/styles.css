@@ -1,0 +1,27 @@
+#main-header {
+    background-image: url("../src/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+#inputTel {
+    width: 88%;
+}
+
+#extra-contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#extra-contacts section {
+    height: 100px;
+    width: 300px;
+}
+
+.space-radio-pqrsf {
+    margin-right: 20px;
+}

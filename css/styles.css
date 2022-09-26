@@ -10,6 +10,14 @@
     width: 88%;
 }
 
+#mision-p {
+    height: 220px;
+}
+
+#vision-p {
+    height: 220px;
+}
+
 #extra-contacts {
     display: flex;
     flex-direction: row;

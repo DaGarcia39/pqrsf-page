@@ -6,7 +6,12 @@
     width: 100%;
 }
 
-#inputTel {
+#pqrsf-form {
+    width: 40%;
+}
+
+#inputTel,
+#inputCc {
     width: 88%;
 }
 
@@ -32,4 +37,28 @@
 
 .space-radio-pqrsf {
     margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    #pqrsf-form {
+        width: 75%;
+    }
+    .btn-enviar-datos {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    #pqrsf-form {
+        width: 95%;
+    }
+    .btn-enviar-datos {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

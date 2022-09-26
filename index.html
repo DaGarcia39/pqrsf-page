@@ -122,11 +122,9 @@
                         class="col-lg-8 d-flex flex-column justify-content-center"
                     >
                         <p class="lead">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Aut optio velit inventore, expedita quo
-                            laboriosam possimus ea consequatur vitae, doloribus
-                            consequuntur ex. Nemo assumenda laborum vel, labore
-                            ut velit dignissimos.
+                            Brindar a toda la comunidad la mejor atención medica
+                            basada en la evidencia científica y contenido ético,
+                            acompañando al paciente y su familia.
                         </p>
                     </section>
                 </section>
@@ -140,11 +138,9 @@
                         class="d-flex flex-column justify-content-center col-lg-8"
                     >
                         <p class="lead">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Vero odio fugiat voluptatem dolor, provident
-                            officiis, id iusto! Obcaecati incidunt, qui nihil
-                            beatae magnam et repudiandae ipsa exercitationem,
-                            in, quo totam.
+                            Contribuir a mejorar el nivel de salud y la calidad
+                            de vida de la población a través de la prestación de
+                            servicios de salud.
                         </p>
                     </section>
                     <section>
@@ -224,6 +220,7 @@
                             class="form-control"
                             id="exampleFormControlInput1"
                             placeholder="name@example.com"
+                            required
                         />
                         <label for="inputName">Nombre completo</label>
                         <input
@@ -231,22 +228,32 @@
                             class="form-control"
                             id="inputName"
                             placeholder="Pepito Perez"
+                            required
                         />
                     </section>
                     <section class="form-group">
                         <label for="exampleFormControlSelect1"
                             >Tipo de documento</label
                         >
-                        <select
-                            class="form-control"
-                            id="exampleFormControlSelect1"
-                        >
-                            <option>C.C</option>
-                            <option>T.I</option>
-                            <option>C.E</option>
-                            <option>N.I.P</option>
-                            <option>N.I.T</option>
-                        </select>
+                        <section class="d-flex justify-content-between w-100">
+                            <select
+                                class="form-control w-auto mr-3"
+                                id="exampleFormControlSelect1"
+                                required
+                            >
+                                <option>C.C</option>
+                                <option>T.I</option>
+                                <option>C.E</option>
+                                <option>N.I.P</option>
+                                <option>N.I.T</option>
+                            </select>
+                            <input
+                                type="number"
+                                id="inputCc"
+                                name="inputCc"
+                                class="form-control"
+                            />
+                        </section>
                     </section>
                     <section class="form-group">
                         <label for="inputTel" class="d-block"
@@ -257,6 +264,7 @@
                                 name="indicativo"
                                 id="indicativo"
                                 class="form-control w-auto mr-3"
+                                required
                             >
                                 <option value="1">+57</option>
                                 <option value="1">+56</option>
@@ -288,7 +296,9 @@
                             rows="3"
                         ></textarea>
                     </section>
-                    <section class="d-flex justify-content-end pt-2">
+                    <section
+                        class="d-flex justify-content-end pt-2 btn-enviar-datos"
+                    >
                         <button type="submit" class="btn btn-success">
                             Enviar PQRSF
                         </button>
@@ -327,7 +337,7 @@
                 </section>
                 <section class="m-0 text-center text-white">
                     <h3>About us</h3>
-                    <p>No se que poner pero somos makias.</p>
+                    <p><strong>correo.de.contacto@ejemplo.com</strong></p>
                 </section>
             </section>
             <p class="pt-3 m-0 text-center text-white">

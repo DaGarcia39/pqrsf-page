@@ -158,7 +158,7 @@
                 <form>
                     <h2 class="text-center">Formato de PQRSF</h2>
                     <section class="d-flex flex-column text-center form-group">
-                        <label>
+                        <label for="radioTypePetition">
                             Para diligenciar el siguiente formato marque la
                             casilla con el tipo de solicitud
                         </label>
@@ -212,13 +212,11 @@
                         </section>
                     </section>
                     <section class="form-group">
-                        <label for="exampleFormControlInput1"
-                            >E-mail de contacto</label
-                        >
+                        <label for="email">E-mail de contacto</label>
                         <input
                             type="email"
                             class="form-control"
-                            id="exampleFormControlInput1"
+                            id="email"
                             placeholder="name@example.com"
                             required
                         />
@@ -232,14 +230,11 @@
                         />
                     </section>
                     <section class="form-group">
-                        <label for="exampleFormControlSelect1"
-                            >Tipo de documento</label
-                        >
+                        <label for="inputCc">Tipo de documento</label>
                         <section class="d-flex justify-content-between w-100">
                             <select
                                 class="form-control w-auto mr-3"
-                                id="exampleFormControlSelect1"
-                                required
+                                id="inputCc"
                             >
                                 <option>C.C</option>
                                 <option>T.I</option>
@@ -252,6 +247,7 @@
                                 id="inputCc"
                                 name="inputCc"
                                 class="form-control"
+                                required
                             />
                         </section>
                     </section>
@@ -261,10 +257,9 @@
                         >
                         <section class="d-flex justify-content-between w-100">
                             <select
-                                name="indicativo"
-                                id="indicativo"
+                                name="inputTel"
+                                id="inputTel"
                                 class="form-control w-auto mr-3"
-                                required
                             >
                                 <option value="1">+57</option>
                                 <option value="1">+56</option>
@@ -277,14 +272,21 @@
                                 name="inputTel"
                                 id="inputTel"
                                 class="form-control"
+                                required
                             />
                         </section>
                     </section>
                     <section class="form-group">
-                        <label for="" class="d-block"
+                        <label for="petitionTitle" class="d-block"
                             >Titulo de la solicitud</label
                         >
-                        <input type="text" class="form-control" />
+                        <input
+                            type="text"
+                            name="petitionTitle"
+                            id="petitionTitle"
+                            class="form-control"
+                            required
+                        />
                     </section>
                     <section class="form-group">
                         <label for="exampleFormControlTextarea1"
@@ -294,14 +296,19 @@
                             class="form-control"
                             id="exampleFormControlTextarea1"
                             rows="3"
+                            required
                         ></textarea>
                     </section>
                     <section
                         class="d-flex justify-content-end pt-2 btn-enviar-datos"
                     >
-                        <button type="submit" class="btn btn-success">
-                            Enviar PQRSF
-                        </button>
+                        <input
+                            type="submit"
+                            name="enviarDatos"
+                            value="Enviar PQRSF"
+                            id="btn-enviar-datos"
+                            class="btn btn-success"
+                        />
                     </section>
                 </form>
             </section>
@@ -344,5 +351,6 @@
                 Copyright &copy; <strong>D&L PANAS</strong> - 2022
             </p>
         </footer>
+        <script src="js/code.js"></script>
     </body>
 </html>
